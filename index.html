@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элитный Бренд</title>
+    <!-- Google Fonts: Merriweather для заголовков и Open Sans для основного текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Particles.js (эффект частиц) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nargiz Look</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Коллекция</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-toggle"><i class="fa fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section с слайдером и эффектом частиц -->
+    <section id="home" class="hero">
+        <!-- Элемент для частиц -->
+        <div id="particles-js"></div>
+        <!-- Слайдер -->
+        <div class="slider">
+            <div class="slide active">
+                <h2>NargizLook</h2>
+                <h1>Элитная мода</h1>
+                <p>Погрузитесь в мир утончённого стиля и роскоши.</p>
+                <a href="#catalog" class="btn">Узнать больше</a>
+            </div>
+            <div class="slide">
+                <h2>NargizLook</h2>
+                <h1>Изысканный дизайн</h1>
+                <p>Каждая коллекция – произведение искусства.</p>
+                <a href="#catalog" class="btn">Узнать больше</a>
+            </div>
+            <div class="slide">
+                <h2>NargizLook</h2>
+                <h1>Эксклюзивные решения</h1>
+                <p>Стиль, который подчёркивает вашу индивидуальность.</p>
+                <a href="#catalog" class="btn">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Коллекция" -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2>Коллекция</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/c1.jfif" alt="Стильный костюм">
+                    </div>
+                    <div class="product-info">
+                        <h3>Стильный костюм</h3>
+                        <p class="price">25,000 сом</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/c4.jfif" alt="Стильный костюм">
+                    </div>
+                    <div class="product-info">
+                        <h3>Класический костюм</h3>
+                        <p class="price">25,000 сом</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/x2.jfif" alt="Элегантное платье">
+                    </div>
+                    <div class="product-info">
+                        <h3>Элегантное платье</h3>
+                        <p class="price">30,000 сом</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <!-- Дополнительные карточки товаров -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "О нас" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Наш бренд – символ роскоши и изысканности, созданный для истинных ценителей элегантного стиля. Мы
+                используем лучшие материалы и современные технологии для создания уникальных коллекций.</p>
+        </div>
+    </section>
+
+    <!-- Раздел "Lookbook" -->
+    <section id="lookbook" class="lookbook">
+        <div class="container">
+            <h2>Lookbook</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./img/l1.jpg" alt="Lookbook 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/l2.jpg  " alt="Lookbook 2">
+                </div>
+                <!-- Дополнительные элементы галереи -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Блог" -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Блог</h2>
+            <article class="blog-post">
+                <h3>Новые тенденции в элитной моде</h3>
+                <p>Читайте о последних трендах, задающих тон в мире роскоши и эксклюзивного стиля.</p>
+                <a href="#">Читать далее <i class="fa fa-arrow-right"></i></a>
+            </article>
+            <!-- Дополнительные статьи -->
+        </div>
+    </section>
+
+    <section class="map">
+        <h1>Mы на карте</h1>
+
+        <div class="map-info">
+            <p>Мы находимся в самом сердце Каракола, на улице Тогтогула 212. Приходите к нам за уникальными
+                коллекциями!</p>
+            <p>Наши двери открыты для вас с понедельника по субботу с 10:00 до 19:00.</p>
+
+        </div>
+        <div class="mainMap">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4af717457a644552385a69d589f1c1eff2051ece59bec889ed322dbbb076d914&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Раздел "Контакты" -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p><i class="fa fa-phone"></i> +996 700 551 888</p>
+                <p><i class="fa fa-envelope"></i> info@nargizlook.kg</p>
+                <p><i class="fa fa-map-marker-alt"></i> Каракол, Тыныстанова 75\1</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Элитный Бренд. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Переключение мобильного меню
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            mobileMenuToggle.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+            });
+
+            // Функциональность слайдера в hero-секции
+            const slides = document.querySelectorAll('.slider .slide');
+            let currentSlide = 0;
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 5000);
+
+            // Инициализация Particles.js с конфигурацией
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#d4af37"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#d4af37",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 100,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+    </script>
+</body>
+
+</html>

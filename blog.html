@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог о Моде | NargizLook</title>
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --black: #000;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--gold);
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: var(--black);
+    }
+
+    section.blog {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .blog-post {
+      background: var(--white);
+      color: var(--black);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-post-content {
+      padding: 1.5rem;
+    }
+
+    .blog-post-content h2 {
+      font-family: 'Poiret One', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+
+    .blog-post-content p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .read-more {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background: var(--gold);
+      color: var(--black);
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .read-more:hover {
+      background: #c89f2b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: var(--gold);
+      color: var(--black);
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Блог о Моде</h1>
+</header>
+
+<section class="blog">
+  <div class="blog-post">
+    <img src="./blogImg/blog1.png" alt="Fashion Blog">
+    <div class="blog-post-content">
+      <h2>Новые тенденции в элитной моде</h2>
+      <p>Читайте о последних трендах, задающих тон в мире роскоши и эксклюзивного стиля. Узнайте, какие цвета, ткани и фасоны будут править подиумами в этом сезоне.</p>
+      <a href="#" class="read-more">Читать далее</a>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="./blogImg/blog2.png" alt="Elegant Style">
+    <div class="blog-post-content">
+      <h2>Как создать безупречный элегантный образ</h2>
+      <p>Рассказываем о секретах идеального элегантного стиля: от выбора тканей до сочетания аксессуаров. Практические советы для любого случая.</p>
+      <a href="#" class="read-more">Читать далее</a>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="./blogImg/blog3.png" alt="Sustainable Fashion">
+    <div class="blog-post-content">
+      <h2>Эко-мода: будущее индустрии</h2>
+      <p>Мир моды всё активнее поддерживает идеи устойчивого развития. Узнайте, как роскошные бренды внедряют экологичные практики в свои коллекции.</p>
+      <a href="#" class="read-more">Читать далее</a>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="./blogImg/blog4.png" alt="Luxury Accessories">
+    <div class="blog-post-content">
+      <h2>Аксессуары, которые преобразят ваш образ</h2>
+      <p>Ключевые украшения и аксессуары, которые добавят вашему стилю изысканности. Рассказываем, на что обратить внимание в 2025 году.</p>
+      <a href="#" class="read-more">Читать далее</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 NargizLook. Все права защищены.
+</footer>
+
+</body>
+</html>
